@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #202733;
+    .advise{
+        max-width: 540px;
+        min-height: 332px;
+        background: #313A48;
+        box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+        border-radius: 15px;
+        padding: 48px;
+        position: relative;
+        .advise__id{
+            width: 100%;
+            margin-bottom: 24px;
+            text-align: center;
+            font-family: 'Manrope', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 4.08571px;
+            color: #53FFAA;
+            text-transform: uppercase;
+        }
+        .advise__text{
+            min-height: 144px;
+            font-family: 'Manrope', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 38px;
+            text-align: center;
+            letter-spacing: -0.3px;
+            color: #CEE3E9;
+            margin-bottom: 40px;
+        }
+        .border{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            .border__left, .border__right{
+                display: block;
+                width: 196px;
+                height: 1px;
+                background: #4F5D74;
+            }
+            .icon{
+                width: 20px;
+                height: 16px;
+            }
+            
+        }
+        .icon__container{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -31px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 64px;
+                height: 64px;
+                background: #53FFAA;
+                cursor: pointer;
+                transition: .3s;
+                user-select: none;
+                &:hover{
+                    box-shadow: 0px 0px 40px #53FFAA;
+                    transition: .3s;
+                }
+            }
+        }
+        
+    }
+}
